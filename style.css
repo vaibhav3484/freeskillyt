@@ -1,0 +1,445 @@
+/* Reset some default styles */
+body, h1, p, button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #333; /* Dark background for the navbar */
+  padding: 10px 20px;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+/* Search form styling */
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  padding: 8px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.btn-outline-success {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 2px solid #28a745;
+  color: #28a745;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+/* Login and Signup button styling */
+.ls {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 30px; /* Rounded corners */
+}
+
+button.login {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+}
+
+button.login:hover {
+  background-color: #0056b3;
+}
+
+button.signup {
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+}
+
+button.signup:hover {
+  background-color: #218838;
+}
+
+/* General Content Styling */
+.content {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+}
+
+.container {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Course Info Styling */
+.course-info {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.course-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.course-level,
+.course-duration,
+.course-videos,
+.course-rating {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.course-level strong,
+.course-duration strong,
+.course-videos strong,
+.course-rating strong {
+  color: #333;
+  font-weight: bold;
+}
+
+
+.enroll-button{
+  margin-right: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.enroll-button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.enroll-button:hover {
+  background-color: transparent;
+}
+
+.enroll-button:hover .text {
+  color: #181717;
+}
+
+
+
+
+.videossection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2.5rem;
+  gap: 3.5rem;
+}
+
+.video-container iframe {
+  height: 350px;
+  width: 790px;
+}
+
+.video-list-section {
+ border: 2px solid rgb(224, 213, 213);
+ border-radius: 5px;
+ margin-right: 5rem;
+ width: 34rem;
+}
+
+.video-list li {
+  height: 1.6rem;
+  padding: 3%;
+  
+}
+
+.video-summary {
+  width: 47.6rem;
+  padding-bottom: 1rem;
+}
+
+.aisq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px 10px 40px;
+}
+
+.questions-section {
+  margin-right: 2.5rem;
+  padding-bottom: 1rem;
+  width: 36.7rem;
+}
+
+
+.nr {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.rate-course-section {
+  text-align: center;
+  padding: 4rem;
+  margin-right: 8.5rem;
+}
+
+.rate-course-section button {
+  margin-top: 1rem;
+}
+
+.notes-tools-section {
+  padding-bottom: 2rem;
+  margin-left: 2.5rem;
+}
+
+.job-tips-section {
+  margin-left: 2.5rem;
+}
+
+.titlefirst {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2.5rem;
+  padding-bottom: 2rem;
+ 
+}
+
+
+.progress-tracker-section {
+  margin-right: 5rem;
+  width: 34rem;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.progress {
+  background-color: #4caf50;
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 360px) {
+
+  .container-fluid {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    max-width: 360px;
+  }
+
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .btn-outline-success {
+    margin-top: 1rem;
+    margin-left: 0px;
+  }
+
+  .navbar {
+    row-gap: 1rem;
+  }
+
+  .ls {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titlefirst {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 5px;
+  }
+
+  .progress-tracker-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+  }
+
+  .progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .progress {
+    background-color: #4caf50;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+  }
+
+  .videossection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+  
+  
+
+  .video-container iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    width: 22rem;
+    height: 190px;
+  }
+
+  .video-list-section {
+    text-align: center;
+  }
+
+  .video-list li {
+    padding: 1rem;
+  }
+
+  .aisq {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .video-summary {
+    width: 22rem;
+  }
+
+  .nr {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rate-course-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin-left: 7rem;
+  }
+  
+  .rate-course-section button {
+    margin-top: 1rem;
+  }
+  
+  .notes-tools-section {
+    padding-bottom: 1rem;
+    align-items: center;
+  }
+
+  
+  .job-tips-section {
+    text-align: center;
+    margin: 0;
+  }
+
+}
+

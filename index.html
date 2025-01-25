@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Skill Course - Course Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">  
+              <form class="d-flex" role="search">
+                <a class="navbar-brand">FreeSkill</a>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <form class="ls">
+                <button class="login">Login</button>
+                <button class="signup">Signup</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Main Content (Optional) -->
+    <div class="content">
+        <div class="container">
+            <div class="course-info">
+                <h1 class="course-title">Learn JavaScript Basics</h1>
+                <p class="course-level">Skill Level: <strong>Beginner</strong></p>
+                <p class="course-duration">Estimated Duration: <strong>2 hours 30 minutes</strong></p>
+                <p class="course-videos">Total Videos: <strong>5</strong></p>
+                <p class="course-rating">Average Rating: <strong>4.5/5</strong></p>
+                <button class="enroll-button" onclick="enroll()"><p class="text">Enroll</p></button>
+            </div>
+
+            <div class="course-info">
+                <h1 class="course-title">Learn JavaScript Basics</h1>
+                <p class="course-level">Skill Level: <strong>Beginner</strong></p>
+                <p class="course-duration">Estimated Duration: <strong>2 hours 30 minutes</strong></p>
+                <p class="course-videos">Total Videos: <strong>5</strong></p>
+                <p class="course-rating">Average Rating: <strong>4.5/5</strong></p>
+                <button class="enroll-button" onclick="enroll()"><p class="text">Enroll</p></button>
+            </div>
+
+            <div class="course-info">
+                <h1 class="course-title">Learn JavaScript Basics</h1>
+                <p class="course-level">Skill Level: <strong>Beginner</strong></p>
+                <p class="course-duration">Estimated Duration: <strong>2 hours 30 minutes</strong></p>
+                <p class="course-videos">Total Videos: <strong>5</strong></p>
+                <p class="course-rating">Average Rating: <strong>4.5/5</strong></p>
+                <button class="enroll-button" onclick="enroll()"><p class="text">Enroll</p></button>
+            </div>
+            
+        </div>
+
+
+        <!-- Other content goes here -->
+         <section class="titlefirst">
+            <div>
+                                        <h2 id="video-title" class="video-title">
+                                            <!-- Videos title will be dynamically populated here -->
+                                        </h2>
+            </div>
+          <!-- Progress Tracker -->
+            <div class="progress-tracker-section">
+            <h2>Course Progress</h2>
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <p id="progress-text">Progress: 0%</p>
+            </div>
+        </section>
+                                  <div class="videossection">
+                                 <!-- Video Player Section -->
+                                    <section class="video-player-section" >
+                                        <div class="video-player" >
+                                            <div class="video-container">
+                                                <iframe id="video-player"  src="" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                            
+                                        </div>
+                                    </section>
+
+                                    <!-- Video List Section -->
+                                    <section class="video-list-section">
+                                        <h2>Playlist</h2>
+                                        <ul id="video-list" class="video-list">
+                                            <!-- Videos will be dynamically populated here -->
+                                        </ul>
+                                    </section>
+                                  </div>
+                              
+                            <div class="aisq">
+                                <div class="video-summary">
+                                    <h3>AI-Generated Summary</h3>
+                                    <p id="ai-summary">AI-generated summary will appear here...</p>
+                                </div>
+
+                                            <!-- AI-Generated Questions -->
+                                <div class="questions-section">
+                                    <h3>AI-Generated Questions</h3>
+                                    <div id="ai-questions">
+                                        <!-- Questions will be generated here -->
+                                    </div>
+                                </div>
+                            </div>
+
+                                    <div class="nr">
+                                            <!-- Notes and Tools Section -->
+                                                                <section class="notes-tools-section">
+                                                                        <h2>Notes and Learning Tools</h2>
+                                                                        <!-- Custom Notes for Video -->
+                                                                            <div class="notes-section">
+                                                                            <h3>Custom Notes</h3>
+                                                                            <textarea rows="10" cols="50" id="note-text" placeholder="Write your notes here..."></textarea>
+                                                                            </div><br>
+                                                                            <button onclick="saveNotes()">Save Notes</button>
+                                                                            
+                                                                </section>
+                                            
+                                                            <!-- Rate the Course Section -->
+                                                            <section class="rate-course-section" >
+                                                                <h2>Rate the Course</h2>
+                                                                <label for="course-rating">Rate this course (1 to 5 stars):</label>
+                                                                <select id="course-rating">
+                                                                    <option value="1">1 Star</option>
+                                                                    <option value="2">2 Stars</option>
+                                                                    <option value="3">3 Stars</option>
+                                                                    <option value="4">4 Stars</option>
+                                                                    <option value="5">5 Stars</option>
+                                                                </select><br>
+                                                                <button onclick="saveRating()">Submit Rating</button>
+                                                            </section>
+                                            
+                                     </div>
+
+                 
+
+                  <!-- Job-Seeker Tips Section -->
+                  <section class="job-tips-section">
+                      <h2>Job-Seeker Tips</h2>
+                      <p>Looking for a job after completing this course? Here are some sample job descriptions and career tips for you:</p>
+                      <ul>
+                          <li>Junior Web Developer - Knowledge of JavaScript, HTML, and CSS.</li>
+                          <li>Front-end Developer - Familiarity with DOM manipulation and React.js.</li>
+                          <li>Full-stack Developer - Strong understanding of both front-end and back-end technologies.</li>
+                      </ul>
+                  </section>
+
+                  
+               
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
